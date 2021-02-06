@@ -1,0 +1,22 @@
+package rangrp.zoho;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class cls_main {
+
+    public static void main(String[] args) {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Input: ");
+        int n = Integer.parseInt(br.readLine());
+        for (int i = n; i > 0; i--) {
+            for (int j = n; j > i; j--) {
+                System.out.print(j);
+            }
+            for (int j = i; j > 0; j--) {
+                System.out.print(i);
+            }
+            System.out.println(" ");
+        }
+    }
+}
